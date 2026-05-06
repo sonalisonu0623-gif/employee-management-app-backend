@@ -25,10 +25,8 @@ public class CorsConfig {
         // Allow credentials
         config.setAllowCredentials(true);
 
-        // Allow specific origins (Angular dev server + production)
-        config.setAllowedOrigins(List.of(
-                "*"
-        ));
+// Allow origins (use patterns for flexibility)
+config.setAllowedOriginPatterns(List.of("*"));
 
         // Allow common HTTP methods
         config.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE", "OPTIONS", "PATCH"));
