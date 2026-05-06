@@ -27,8 +27,7 @@ public class CorsConfig {
 
         // Allow specific origins (Angular dev server + production)
         config.setAllowedOrigins(List.of(
-                "http://localhost:4200",
-                "http://localhost:3000"
+                "*"
         ));
 
         // Allow common HTTP methods
